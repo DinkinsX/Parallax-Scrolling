@@ -5,11 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
     background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
 }
 
 header {
@@ -69,6 +71,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 section::before {
@@ -91,17 +94,33 @@ section img {
     pointer-events: none;
 }
 
+section img#stars {
+    transform: translateY(-10%);
+}
+
+section img#moon {
+    transform: translateY(-10%);
+}
+
+section img#mountains_behind {
+    transform: translateY(-100px);
+    opacity: 100%;
+}
+
+
 section img#mountains_front {
     z-index: 10;
 }
 
 #text {
     position: absolute;
+    border-color: #2b1055;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
-    transform: translateY(-100px);
+    transform: translateY(-200px);
     z-index: 9;
+    right: -50%;
 }
 
 #btn {
@@ -112,6 +131,7 @@ section img#mountains_front {
     color: #2b1055;
     font-size: 1.5em;
     display: inline-block;
+    transform: translateY(-100px);
     z-index: 9;
 }
 
