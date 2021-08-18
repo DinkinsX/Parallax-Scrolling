@@ -114,7 +114,6 @@ section img#mountains_front {
 
 #text {
     position: absolute;
-    border-color: #2b1055;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
@@ -126,10 +125,11 @@ section img#mountains_front {
 #btn {
     text-decoration: none;
     padding: 8px 30px;
+    font-weight: bold;
     border-radius: 40px;
     background: #fff;
     color: #2b1055;
-    font-size: 1.5em;
+    font-size: 3vw;
     display: inline-block;
     transform: translateY(-100px);
     z-index: 9;
